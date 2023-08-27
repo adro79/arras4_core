@@ -33,7 +33,7 @@ static int sPriorities[] = {
 
 void SyslogLogger::log(Level level, const char *message)
 {
-    syslog(sPriorities[level], message);
+    syslog(sPriorities[level], "%s", message);
 }
 
 }
